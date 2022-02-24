@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <Button
+        android:id="@+id/btn_volver2"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:text="Volver"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_estatus" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:background="#B00020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:background="#B00020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/titulo_promedio"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Promedio Final"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/txt_parcial1"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#009688"
+        android:ems="10"
+        android:hint="Parcial 1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_promedio" />
+
+    <EditText
+        android:id="@+id/txt_parcial2"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:hint="Parcial 2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_parcial1" />
+
+    <EditText
+        android:id="@+id/txt_parcial3"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#673AB7"
+        android:ems="10"
+        android:hint="Parcial 3"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_parcial2" />
+
+    <Button
+        android:id="@+id/btn_calculadorfinal"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#B00020"
+        android:text="Calcular "
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_parcial3" />
+
+    <TextView
+        android:id="@+id/tv_resultadofinal"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:hint="Resultado"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calculadorfinal" />
+
+    <TextView
+        android:id="@+id/tv_estatus"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:hint="Estatus"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultadofinal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
